@@ -1,0 +1,23 @@
+.topUI{
+	height: 200px;
+	background-color: beige;
+}
+.lane {
+	height: 300px;
+	background-color: #333333;
+}
+
+.choice {
+/*	height: 250px;
+	background-color: pink;
+*/}
+
+.fightcol {
+	overflow: auto;
+}
+
+.cholder { 
+	color: white;
+	float:none;
+	margin: 0 auto;
+}
