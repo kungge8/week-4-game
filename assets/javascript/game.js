@@ -1,97 +1,97 @@
 var COMBATRPGJS = {
 	heroes:[
-		{name: "Hero A",
+		{name: "Ursa",
 		health: 100,
 		atk: 6,
 		img: "assets/images/Ursa_icon.png"},
-		{name: "Hero B",
-		health: 100,
-		atk: 6,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "Hero C",
-		health: 100,
-		atk: 6,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "Hero D",
-		health: 100,
-		atk: 6,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "Hero E",
-		health: 100,
-		atk: 6,
-		img: "assets/images/Ursa_icon.png"}
+		{name: "Troll Warlord",
+		health: 80,
+		atk: 8,
+		img: "assets/images/Troll_Warlord_icon.png"},
+		{name: "Lifestealer",
+		health: 150,
+		atk: 2,
+		img: "assets/images/Lifestealer_icon.png"},
+		{name: "Lone Druid",
+		health: 130,
+		atk: 4,
+		img: "assets/images/Lone_Druid_icon.png"},
+		{name: "Lycan",
+		health: 60,
+		atk: 10,
+		img: "assets/images/Lycan_icon.png"}
 	],
 	smEnemy:[
-		{name: "sm A",
+		{name: "Kobold Foreman",
 		health: 20,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "sm B",
-		health: 20,
+		img: "assets/images/Kobold_Foreman_model.png"},
+		{name: "Ghost",
+		health: 10,
+		atk: 10,
+		img: "assets/images/Ghost_model.png"},
+		{name: "Fell Spirit",
+		health: 30,
+		atk: 2,
+		img: "assets/images/Fell_Spirit_model.png"},
+		{name: "Harpy Stormcrafter",
+		health: 5,
+		atk: 15,
+		img: "assets/images/Harpy_Stormcrafter_model.png"},
+		{name: "Vhoul Assassin",
+		health: 40,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "sm C",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "sm D",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "sm E",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"}
+		img: "assets/images/Vhoul_Assassin_model.png"}
 	],
 	mdEnemy:[
-		{name: "md A",
+		{name: "Centaur Conqueror",
+		health: 25,
+		atk: 2,
+		img: "assets/images/Centaur_Conqueror_model.png"},
+		{name: "Alpha Wolf",
 		health: 20,
+		atk: 10,
+		img: "assets/images/Alpha_Wolf_model.png"},
+		{name: "Satyr Mindstealer",
+		health: 60,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "md B",
-		health: 20,
+		img: "assets/images/Satyr_Mindstealer_model.png"},
+		{name: "Ogre Bruiser",
+		health: 150,
+		atk: 3,
+		img: "assets/images/Ogre_Bruiser_model.png"},
+		{name: "Mud Golem",
+		health: 180,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "md C",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "md D",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "md E",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"}
+		img: "assets/images/Mud_Golem_model.png"}
 	],
 	lgEnemy:[
-		{name: "lg A",
-		health: 20,
+		{name: "Centaur Conqueror",
+		health: 25,
+		atk: 2,
+		img: "assets/images/Centaur_Conqueror_model.png"},
+		{name: "Satyr Tormentor",
+		health: 200,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "lg B",
-		health: 20,
+		img: "assets/images/Satyr_Tormenter_model.png"},
+		{name: "Hellbear Smasher",
+		health: 350,
+		atk: 3,
+		img: "assets/images/Hellbear_Smasher_model.png"},
+		{name: "Wildwing Ripper",
+		health: 100,
+		atk: 15,
+		img: "assets/images/Wildwing_Ripper_model.png"},
+		{name: "Dark Troll Summoner",
+		health: 300,
 		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "lg C",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "lg D",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"},
-		{name: "lg E",
-		health: 20,
-		atk: 5,
-		img: "assets/images/Ursa_icon.png"}
+		img: "assets/images/Dark_Troll_Summoner_model.png"}
 	],
 	Roshan:{
 		name: "Roshan",
-		health: 100,
-		atk: 5,
-		img: "assets/images/Roshan_icon.png"},
+		health: 300,
+		atk: 15,
+		img: "assets/images/Roshan_model.png"},
 	centerDiv: $(".cholder"),
 	Hero: {},
 	Enemy: {},
@@ -133,10 +133,11 @@ var COMBATRPGJS = {
 			temp.on("click",type);
 			temp2 = $("<img>");
 			temp2.attr("src", o[0].img);
+			temp2.addClass("selectionIcon");
 			temp.append(temp2);
 			temp2 = $("<div>");
 			temp2.addClass("stateList");
-			temp2.html("Health: " + o[0].health + "<br>Attack: " + o[0].atk);
+			temp2.html(o[0].name + "<br>Health: " + o[0].health + "<br>Attack: " + o[0].atk);
 			temp.append(temp2);
 			this.centerDiv.append(temp);	
 		} else {
@@ -155,10 +156,11 @@ var COMBATRPGJS = {
 				temp.on("click",type);
 				temp2 = $("<img>");
 				temp2.attr("src", o[0].img);
+				temp2.addClass("selectionIcon");
 				temp.append(temp2);
 				temp2 = $("<div>");
 				temp2.addClass("stateList");
-				temp2.html("Health: " + o[0].health + "<br>Attack: " + o[0].atk);
+				temp2.html(o[0].name + "<br>Health: " + o[0].health + "<br>Attack: " + o[0].atk);
 				temp.append(temp2);
 				this.centerDiv.append(temp);
 			}
@@ -196,7 +198,7 @@ var COMBATRPGJS = {
 		$(this).detach().appendTo(COMBATRPGJS.centerDiv);
 		let temp = $("<button>");
 		temp.text("Fight!");
-		temp.addClass("col-xs-offset-1");
+		temp.addClass("col-xs-offset-1 b");
 		temp.on("click",COMBATRPGJS.fight);
 		temp.appendTo(COMBATRPGJS.centerDiv);
 		temp = $("<div>");
@@ -223,13 +225,22 @@ var COMBATRPGJS = {
 		// COMBATRPGJS.readProperties(COMBATRPGJS.Hero);
 		// COMBATRPGJS.readProperties(COMBATRPGJS.Enemy);	
 		//console.log(COMBATRPGJS.Hero.health);
-		herostate.html("Health: " + COMBATRPGJS.heroHealth + "<br>Attack: " + COMBATRPGJS.heroAtk);
-		enemystate.html("Health: " + COMBATRPGJS.enemyHealth + "<br>Attack: " + COMBATRPGJS.Enemy.atk);
+		herostate.html(COMBATRPGJS.Hero.name + "<br>Health: " + COMBATRPGJS.heroHealth + "<br>Attack: " + COMBATRPGJS.heroAtk);
+		enemystate.html(COMBATRPGJS.Enemy.name + "<br>Health: " + COMBATRPGJS.enemyHealth + "<br>Attack: " + COMBATRPGJS.Enemy.atk);
 
 		if (COMBATRPGJS.heroHealth <= 0){
 			// console.log("lost");
 			tempString = "You lost!";
 			temp.text(tempString);
+			$(".topUI").empty();
+			$(".hero").detach().prependTo(".topUI");
+			COMBATRPGJS.centerDiv.empty();
+			temp.appendTo(COMBATRPGJS.centerDiv);
+			temp = $("<button>");
+			temp.on("click", COMBATRPGJS.initialization);
+			temp.text("Play again!");
+			temp.addClass("b");
+			temp.appendTo(COMBATRPGJS.centerDiv);
 		} else if (COMBATRPGJS.enemyHealth <= 0){
 			if (COMBATRPGJS.Enemy.name === "Roshan"){
 				// console.log("Game won!");
@@ -243,6 +254,7 @@ var COMBATRPGJS = {
 				temp = $("<button>");
 				temp.on("click", COMBATRPGJS.initialization);
 				temp.text("Play again!");
+				temp.addClass("b");
 				temp.appendTo(COMBATRPGJS.centerDiv);
 			} else {
 				// console.log("won");
@@ -256,6 +268,7 @@ var COMBATRPGJS = {
 				temp = $("<button>");
 				temp.on("click", COMBATRPGJS.tierSelector);
 				temp.text("Next round!");
+				temp.addClass("b");
 				temp.appendTo(COMBATRPGJS.centerDiv);
 			}
 		} else {

@@ -7,6 +7,10 @@
 	background-color: #333333;
 }
 
+.selectionIcon{
+	max-height: 144px;
+}
+
 .choice {
 /*	height: 250px;
 	background-color: pink;
@@ -20,4 +24,8 @@
 	color: white;
 	float:none;
 	margin: 0 auto;
+}
+
+button.b{
+	color:black;
 }
